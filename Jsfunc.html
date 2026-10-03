@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one"></h1>
+    <h2 id="two"></h2>
+    <h3 id="three"></h3>
+    <script>
+        //normal function:
+        function normalfunc(a,b){
+            return a+b;
+        }
+        document.getElementById("one").innerHTML=normalfunc(10,50);
+        //function expression:
+        let x= function funcExpression(a,b){
+            return a*b;
+        }
+        var y=x(10,10);
+        document.getElementById("two").innerHTML=y;
+        //anonymous function:
+        let a=function(a,b){
+            return a-b; 
+        }
+        document.getElementById("three").innerHTML=x
+    </script>
+    
+</body>
+</html>

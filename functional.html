@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one"></div>
+    <script>
+        var x={
+            firstname:"deebika",
+            lastname:"balasubramani",
+            age:"20",
+            name:function(){
+                name = this.firstname + " " + this.lastname
+                return name;
+            }
+
+        }
+        document.getElementById("one").innerHTML=x.name;
+    </script>
+</body>
+</html>

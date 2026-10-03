@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <script>
+        let biodata={
+                name:"deebika",
+                age:"20",
+            education: {
+                Ug:"Bca",
+                Pg:"Mca"
+            },
+            occupation :{
+                Job:"It",
+                Company:"Accenture"
+            }
+
+        }
+        document.getElementById('one').innerHTML='name = ${biodata.name}<br> education=${biodata.education.Pg}<br> occupation=${biodata.occupation.Job}'
+        let biodata1={
+            name:"deebika",
+            age:"30",
+            education: {
+                Ug:"Bca",
+                Pg:"Mca",
+                occupation: {
+                Job:"It"
+            }
+            },
+        }
+        document.getElementById("two").innerHTML='name=${biodata1.name} <br> education = ${biodata1.education.Pg}<br> occupation=${biodata1.education.occupation.job}'
+    </script>
+</body>
+</html>
